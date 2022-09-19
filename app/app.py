@@ -6,7 +6,7 @@ from flasgger import Swagger
 app = Flask(__name__)
 Swagger(app)
 
-pickle_in = open("models/classifier.pkl", "rb")
+pickle_in = open("models/SVC.pkl", "rb")  # load the best model
 classifier = pickle.load(pickle_in)
 
 
