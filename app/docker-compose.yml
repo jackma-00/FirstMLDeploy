@@ -1,0 +1,11 @@
+version:  "3.7"
+
+services:
+  mlapp:
+    container_name: first-ml-app
+    image: jackma00/first-ml-image
+    ports:
+      - "8000:8000"
+    build:
+      context: .
+      dockerfile: Dockerfile
