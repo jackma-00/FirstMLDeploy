@@ -12,7 +12,7 @@ classifier = pickle.load(pickle_in)
 
 @app.route('/')
 def welcome():
-    return "Welcome All"
+    return "Welcome All To My First ML Deploy"
 
 
 @app.route('/predict', methods=["Get"])
